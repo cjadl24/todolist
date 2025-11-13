@@ -3,27 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To - Do List App</title>
+    <title>To-Do List</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <h1>To-Do List</h1>
-        <div id="current-date" class="date-display"></div> <!-- New: Current date display -->
-        <form id="task-form">
-            <input type="text" id="task-input" placeholder="Add a new task..." required>
-            <input type="date" id="deadline-input" required> <!-- New: Deadline picker -->
-            <button type="submit">Add Task</button>
-        </form>
-        <ul id="task-list"></ul>
+        <header>
+            <h1>Things to do</h1>
+        </header>
+
+        <main>
+            <div class="input-group">
+                <input type="text" id="task-input" placeholder="Add a new task..." autocomplete="off">
+                <input type="date" id="date-input">
+                <input type="time" id="time-input" value="09:00">
+                <button id="add-btn"><i class="fas fa-plus"></i></button>
+            </div>
+
+            <ul id="task-list"></ul>
+        </main>
+
+        <footer>
+            Clarence John De Leon © 2025 | To-Do List
+        </footer>
     </div>
 
-    <footer>
-        <p> Clarence John De Leon &copy; 2025 | To-Do List</p>
-    </footer>
-    
     <script src="script.js"></script>
 </body>
-
 </html>
-
